@@ -9,6 +9,11 @@
  * @package App_Plus_WordPress_Theme
  */
 $header_logo = get_field('header_logo');
+$header_favicon = get_field('header_favicon');
+$header_facebook = get_field('header_facebook');
+$header_twitter = get_field('header_twitter');
+$header_linkedin = get_field('header_linkedin');
+$header_google_plus = get_field('header_google_plus');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -16,6 +21,7 @@ $header_logo = get_field('header_logo');
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="<?php echo $header_favicon; ?>" />
 
 	<?php wp_head(); ?>
 </head>
@@ -61,10 +67,10 @@ $header_logo = get_field('header_logo');
                 </div>
                 <div class="col-md-3 col-xs-12 col-sm-3">
                     <ul class="social-info">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="<?php echo $header_facebook; ?>"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="<?php echo $header_twitter; ?>"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="<?php echo $header_linkedin; ?>"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="<?php echo $header_google_plus; ?>"><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
             </div>
