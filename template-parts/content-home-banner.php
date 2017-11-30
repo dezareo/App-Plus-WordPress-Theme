@@ -20,21 +20,21 @@ $banner_btn_win_store_link = get_field('banner_btn_win_store_link');
                 <div class="col-md-6 col-md-offset-1 col-sm-6">
                     <div class="block">
                         <h1>
-                            Beautiful, simple and easy to use App Plus.
+                            <?php echo $banner_right_title; ?>
                         </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nemo, corporis ipsum soluta nobis ea!
+                            <?php echo $banner_right_content; ?>
                         </p>
 
                         <ul class="download-btn">
                             <li>
-                                <a href="#" class="btn btn-default btn-apple"> <i class="fa fa-apple"></i>App store</a>
+                                <a href="<?php echo $banner_btn_app_store_link; ?>" class="btn btn-default btn-apple"> <i class="fa fa-apple"></i>App store</a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-andriod"><i class="fa fa-android"></i>Play Store</a>
+                                <a href="<?php echo $banner_btn_play_store_link; ?>" class="btn btn-default btn-andriod"><i class="fa fa-android"></i>Play Store</a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-windows"><i class="fa fa-windows"></i>Windows Store</a>
+                                <a href="<?php echo $banner_btn_win_store_link; ?>" class="btn btn-default btn-windows"><i class="fa fa-windows"></i>Windows Store</a>
                             </li>
                         </ul>
                         
