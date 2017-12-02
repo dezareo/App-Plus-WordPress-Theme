@@ -14,7 +14,7 @@ $utility_content = get_field('utility_content');
                 </div>
                 <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-delay=".8s">
                     <div class="block">
-                        <h2><?php echo $utility_title; ?></h2>
+                        <h2 class="title"><?php echo $utility_title; ?></h2>
                         <p>
                             <?php echo $utility_content; ?>
                         </p>
