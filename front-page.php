@@ -4,5 +4,7 @@
 <?php get_template_part('template-parts/content', 'home-service'); ?>
 <?php get_template_part('template-parts/content', 'home-feature'); ?>
 <?php get_template_part('template-parts/content', 'home-utility-1'); ?>
+<?php get_template_part('template-parts/content', 'home-utility-2'); ?>
+<?php get_template_part('template-parts/content', 'home-subscribe'); ?>
 
 <?php get_footer('home'); ?>
